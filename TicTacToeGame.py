@@ -19,6 +19,7 @@ def restart():
 def main():
     s = input("Please enter the size of the game: ")
     size = int(s)
+    # player X is a random player and O is a player using alphabeta search
     play_game(TicTacToe(size, size, size), {'X': random_player, 'O': player(alphabeta_search)}, verbose=True)
     restart()
 

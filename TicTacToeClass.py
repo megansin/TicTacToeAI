@@ -121,7 +121,8 @@ infinity = math.inf
 
 
 def minimax_search(game, state):
-    """Search game tree to determine best move; return (value, move) pair."""
+    # based off the minimax_tt in the github
+    # did not use this search algo when creating players in the application as runtime was very long when board size > 3
 
     # player = state.to_move
     #
@@ -184,8 +185,7 @@ def cache1(function):
 
 
 def alphabeta_search(game, state):
-    """Search game to determine best action; use alpha-beta pruning.
-    As in [Figure 5.7], this version searches all the way to the leaves."""
+    # based off the alphabeta_search_tt in the github
 
     # player = state.to_move
     #
